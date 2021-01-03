@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WeConnect/Login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="Login.css">
+	<link rel="stylesheet" type="text/css" href="WeConnect.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse ">
+  		<div class="container">
+    	<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+        		<a class="navbar-brand" href="#">WeConnect</a>
+    		</div>
+
+    	<!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav">
+        			<li><a href="About.html">About</a></li>
+        			<li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
+        			<li><a href="SignUp.html">Find Job <i class="fa fa-user-plus"></i></a></li>
+      			</ul>
+      
+      			<ul class="nav navbar-nav navbar-right">
+        			<li class="active"><a href="WeConnect.html">SignOut&nbsp<i class="fa fa-sign-out"></i></a></li>
+      			</ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12" id="content1">
+				<form class="form">
+					<fieldset>
+						<legend>Add New Job</legend>
+						<label>Job Title:</label><br>
+            <select name="jobs">
+              <option>Architect</option>
+              <option>Accountant</option>
+              <option>Human Resources</option>
+              <option>Sales</option>
+              <option>App Developer</option>
+              <option>Database Administrator</option>
+              <option>Programmer</option>
+              <option>Web Developer</option>
+              <option>Software Developer</option>    
+            </select> 
+    <br><br>
+    <label>Job Description</label><br>
+    <textarea name="jobdes" rows="6" cols="25" style="border:solid 1px">Job Description</textarea><br><br>
+    <label>Job Location</label><br>
+    <input class = "check" type="text" name="jobloc" placeholder="Job Location" required="required" size="25"/><br><br>
+    <label>Email ID</label><br>
+    <input class = "check" type="email" name="emai" placeholder="Email" required="required" size="25"/><br><br>
+    <label>Skills Required</label><br>
+    <select name="skills" multiple="" class="ui fluid dropdown">
+      <option value="Accounting" >Accounting</option>
+      <option value="Adobe Photoshop" >Adobe Photoshop</option>
+      <option value="HTML" >HTML</option>
+      <option value="Blogging" >Blogging</option>
+      <option value="C++" >C++</option>
+      <option value="C#" >C#</option>
+      <option value="Auto CAD" >Auto CAD</option>
+      <option value="DBMS" >DBMS</option>
+      <option value="Data Analytics" >Data Analytics</option>
+      <option value="Django" >Django</option>
+      <option value="Digital Signal Processing" >Digital Signal Processing</option>
+      <option value="Drupal" >Drupal</option>
+      <option value="Enterprise Resource Planning" >Enterprise Resource Planning</option>
+      <option value="Ethical Hacking" >Ethical Hacking</option>
+      <option value="Event Management" >Event Management</option>
+      <option value="Facebook Marketing" >Facebook Marketing</option>
+      <option value="Financial Marketing" >Financial Marketing</option>
+      <option value="Abode Flash" >Abode Flash</option>
+      <option value="Hadoop" >Hadoop</option>
+    </select><br><br>
+
+      <input type="submit" name="Add Job"/>
+  
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" align="center">
+       
+        <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+      </div>
+      
+      <div class="modal-body" align="center">
+        <p>Phone : 02055858<br>Email : WeConnect@gmail.com<br>
+        Address : WeConnect Center, WeConnect Street, Los Angeles</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.js"></script>
+  <script type="text/javascript" src="GetStarted.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+</body>
+</html>
